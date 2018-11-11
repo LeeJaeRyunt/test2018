@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ////////////////////////////////////////////////////////////////////////////////////////////// -->
+    <meta charset="utf-8">
+    <title>충남대학교 빈강의실 정보 웹앱</title>
+    <meta name="description" content="A schedule management with jQuery.">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="dist/jquery.schedule.css">
+    <link rel="stylesheet" href="dist/jquery.schedule-demo.css">
+    <!-- ////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+
+    <!-- <meta charset="utf-8"> -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- <title>Creative - Start Bootstrap Theme</title> -->
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- Plugin CSS -->
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/creative.min.css" rel="stylesheet">
+  
+</head>
+
+
+<body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">공강러</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+
+
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="/index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="">login/signin</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="/timetable.html">timetable</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="/c">강의실 검색</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="/contact_us.html">Contact</a>
+            </li>
+
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+<!-- ////////////////////////////////////////////////////////////////////////////////////////////// -->
+<section id="contact" class="bg-dark">
+        <div class="row">
+            <div class="col">
+                <h2>Timetable</h2>
+            </div>
+        </div>
+        <div id="schedule4" class="jqs-demo mb-3 bg-dark" ></div>
+        
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script src="dist/jquery.schedule.js"></script>
+<script>
+  $(function () {
+
+$('#schedule4').jqs({
+  periodColors: [
+    ['rgba(0, 0, 0, 0.5)', '#000', '#fff'],
+    ['rgba(200, 0, 0, 0.5)', '#f00', '#000'],
+    ['rgba(0, 200, 0, 0.5)', '#0f0', '#000'],
+    ['rgba(0, 0, 200, 0.5)', '#00f', '#000'],
+    ['rgba(0, 123, 200, 0.5)', '#00f', '#000']
+  ],
+  periodTitle: 'No title',
+  periodBackgroundColor: 'rgba(0, 0, 0, 0.5)',
+  periodBorderColor: '#000',
+  periodTextColor: '#fff',
+  periodRemoveButton: 'Remove please !',
+  periodTitlePlaceholder: 'A custom title'
+});
+
+
+
+$('#reset').click(function () {
+  $('#schedule3').jqs('reset');
+  $('#result').val('');
+});
+});
+</script>
+
+
+</section>
+
+
+<!-- ////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
